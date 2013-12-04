@@ -1,0 +1,11 @@
+---
+ name: The Name of the Demo
+ description: Some description, please keep it in one line
+ authors:
+   - ZEAL
+ resources:
+   - http://yohoonline.com/js/common.js
+   - http://yohoonline.com/css/all_style.css
+   - http://yohoonline.com/css/other_style.css
+ normalize_css: no
+ ...
