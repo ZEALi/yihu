@@ -1,0 +1,22 @@
+<div id="pop-up">
+  <div class="pop-cont">
+  	<ul class="p-u1">
+  		<li>客订单号：<span class="green"><?php echo $this->r['corderno']; ?></span></li>
+  		<!--<li>订单类型：<?php echo $this->kinds[$this->r['isfuzzy']]; ?></li>-->
+  		<li>下单日期：<?php echo Yh_Util::getCnDateFormat($this->r['placetime'], 'Y-m-d'); ?></li>
+  		<li>委托方：<?php echo $this->r['custname']; ?></li>
+  		<li>委托人：<?php echo $this->r['linkman']; ?></li>
+  		<li>联系电话：<?php echo $this->r['tel']; ?></li>
+  		<li>执行时限：<span style="color:red"><?php if(strtotime($this->r['exectime'])>strtotime('2000-1-1')) {echo date('Y-m-d H:i',strtotime($this->r['exectime']));} ?></span></li>
+  	</ul>
+  	<div id="exp1" class="exp02 tcurrent showed">
+  		创建人：<?php echo $this->r['user_name'] ? $this->r['user_name']:'无'; ?>
+  	</div>
+  </div>
+  <div>
+	  <p><a class="sel-del" href="javascript:;" id="<?php echo $this->common()->ID('Print')?>" data-print-content="#pop-up .pop-cont"><b>打印</b></a></p>
+  </div>
+  <div class="btn-operate">
+    <p class="btn-operate-white"><a href="javascript:;" data-cancel-popup="this">关　闭</a></p>
+  </div>
+</div>
