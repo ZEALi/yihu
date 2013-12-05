@@ -52,8 +52,6 @@
    - http://yohoonline.com/js/lodopFuncs.js
    - http://yohoonline.com/js/jquery.mousewheel.js
    - http://yohoonline.com/js/common.js
-   - http://yohoonline.com/js/headerglobal.js
-   - http://yohoonline.com/js/imports.js
  normalize_css: no
  ...
  <p>All necessary resources.</p>
