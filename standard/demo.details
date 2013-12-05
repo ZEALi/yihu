@@ -55,4 +55,4 @@
  normalize_css: no
  ...
  <p>All necessary resources.</p>
- <p>All be hard linked.</p>
+ <p>All sub dir should be hard linked.</p>
